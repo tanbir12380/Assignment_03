@@ -1,6 +1,7 @@
 body {
   margin: 0;
   background-color: rgba(245, 255, 246, 255);
+  padding-top:1px;
 }
 
 /* header section */
@@ -512,11 +513,11 @@ header {
 
   #nav-left {
     justify-content: center;
-    padding: 30px 0;
+    margin: 30px 0;
   }
 
   #nav-right {
-    padding: 30px auto;
+    margin: 30px auto;
     width: 95%;
   }
 
