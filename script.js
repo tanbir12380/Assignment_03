@@ -203,3 +203,14 @@ alert(messege);
   })
 }
 
+
+
+document.getElementById("mob-services").addEventListener('click',function(event){
+  document.getElementById("service-contain").style.display = 'grid';
+  document.getElementById("history").style.display = 'none';
+})
+
+document.getElementById("mob-history").addEventListener('click',function(event){
+  document.getElementById("service-contain").style.display = 'none';
+  document.getElementById("history").style.display = 'block';
+})
