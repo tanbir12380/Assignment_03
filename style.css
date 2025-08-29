@@ -249,14 +249,13 @@ header {
   border-radius: 15px;
   display: flex;
   /**/
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }
 
 .heart-icon img {
   width: 32px;
   height: 32px;
-  color: rgba(92, 92, 92, 1) !important;
 }
 
 
@@ -308,17 +307,19 @@ header {
 }
 
 .service-buttons {
-  width: 375px;
+  width: 100%;
   display: flex;
   /**/
   justify-content: space-between;
   font-family: "Roboto";
   font-size: 16px;
   font-weight: 400;
+  margin: 0 auto;
+  flex-wrap: wrap;
 }
 
 .service-buttons button {
-  width: 182px !important;
+  width: 47% !important;
   height: 40px !important;
   border-radius: 8px !important;
 

@@ -18,6 +18,9 @@ for(let call of callButtons){
     // console.log(parent.childNodes[1]);
     // console.log(parent.childNodes[5]);
 
+let dateNow = new Date();
+let timeNow = dateNow.toLocaleTimeString(); 
+
 let coin = document.getElementById("coin-total-count");
 let coinsCount = parseInt(coin.innerText);
 if(coinsCount>=20){
@@ -46,8 +49,7 @@ let serviceNum = document.createElement('p');
 serviceNum.innerText = parent.childNodes[5].innerText;
 let date = document.createElement('p');
 
-let dateNow = new Date();
-let timeNow = dateNow.toLocaleTimeString(); 
+
 date.innerText = timeNow;
 
 
@@ -84,6 +86,8 @@ for(let call of callButtons1){
     // console.log(parent.childNodes[1]);
     // console.log(parent.childNodes[5]);
 
+let dateNow = new Date();
+let timeNow = dateNow.toLocaleTimeString(); 
 
 let coin = document.getElementById("coin-total-count");
 let coinsCount = parseInt(coin.innerText);
@@ -108,8 +112,7 @@ let serviceNum = document.createElement('p');
 serviceNum.innerText = parent.childNodes[5].innerText;
 let date = document.createElement('p');
 
-let dateNow = new Date();
-let timeNow = dateNow.toLocaleTimeString(); 
+
 date.innerText = timeNow;
 
 
@@ -150,3 +153,53 @@ document.getElementById("history-btn").addEventListener('click', function(event)
 
 
 })
+
+
+
+
+
+
+let copyButton = document.getElementsByClassName("copy-btn");
+for(let button of copyButton){
+  button.addEventListener('click', function(event){
+         let totalCopy = document.getElementById("copy-total-count");
+         console.log(totalCopy);
+         let copyCount = parseInt(totalCopy.innerText) + 1;
+
+
+let parent = event.target.parentNode.parentNode;
+let number = parent.childNodes[5].innerText;
+
+navigator.clipboard.writeText(number);
+
+let messege = "The number has been copied : " + number;
+alert(messege);
+
+         totalCopy.innerText = copyCount;
+  })
+}
+
+
+
+
+
+let copyButton1 = document.getElementsByClassName("fa-copy");
+for(let button of copyButton1){
+  button.addEventListener('click', function(event){
+         let totalCopy = document.getElementById("copy-total-count");
+         console.log(totalCopy);
+         let copyCount = parseInt(totalCopy.innerText) + 1;
+
+
+let parent = event.target.parentNode.parentNode.parentNode;
+let number = parent.childNodes[5].innerText;
+
+navigator.clipboard.writeText(number);
+
+let messege = "The number has been copied : " + number;
+alert(messege);
+
+         totalCopy.innerText = copyCount;
+  })
+}
+
