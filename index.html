@@ -30,13 +30,13 @@
     </div>
     <div id="nav-right">
       <div id="heart">
-        <p>0</p>
+        <p id="heart-total-count">0</p>
         <div>
           <img src="assets/heart.png" alt="">
         </div>
       </div>
       <div id="coin">
-        <p>100</p>
+        <p id="coin-total-count">100</p>
         <div>
           <img src="assets/coin.png" alt="">
         </div>
@@ -303,12 +303,25 @@
 
       <div id="history">
         <div id="history-head">
-          <h4>Call history</h4>
-          <button class="btn btn-success"> <i class="fa-solid fa-phone"></i> Clear</button>
+          <h4><i class="fa-solid fa-clock-rotate-left"></i> Call history</h4>
+          <button class="btn" id="history-btn"> Clear</button>
         </div>
+
+        <!--  
+         <div class="history-record">
+          <div>
+            <p class="his-service-name">Fire Service Number</p>
+            <p class="his-service-num">999</p>
+          </div>
+          <p class="record-time">11:36:58 AM</p>
+        </div> 
+        -->
+
       </div>
     </section>
   </main>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
