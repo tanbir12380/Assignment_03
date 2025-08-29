@@ -536,7 +536,7 @@ header {
 
   #banner h4 {
     font-size: 28px;
-    margin-bottom:20px;
+    margin-bottom:20px !important;
   }
 
   #banner p {
