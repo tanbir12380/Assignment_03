@@ -21,7 +21,7 @@ We can create a new element with createElement() function, this function takes t
 3.What is Event Bubbling and how does it work?
 
 ## **Ans** :  
-Event Bubbling is a situation where an event on an element also triggers the events of its parent elements. For example, if an HTML page has a <section> containing multiple <div> elements, and each <div> has multiple buttons, and all these elements have their own events, if someone performs an action on a button like clicking, key pressing, or moving the mouse that trigger it's event will also trigger the event on its parent <div> and the <section>. This bubbling can be stopped using the stopPropagation() function.
+Event Bubbling is a situation where an event on an element also triggers the events of its parent elements. For example, if an HTML page has a section tag containing multiple div tag elements, and each <div> has multiple buttons, and all these elements have their own events, if someone performs an action on a button like clicking, key pressing, or moving the mouse that trigger it's event will also trigger the event on its parent div and the section. This bubbling can be stopped using the stopPropagation() function.
 
 
 
@@ -42,6 +42,7 @@ The Event Delegation is a technique where we add the event listener to the paren
 
 ## **Ans** : 
 The preventDefault() function used to prevent default submitting feature of form tag  when the button is clicked  and the stopPropagation() function used to stop the Event Bubbling effect.
+
 
 
 
